@@ -7,10 +7,12 @@ registration, account management as well as 3rd party (social) account
 authentication.
 
 This repository was forked from https://github.com/pennersr/django-allauth
-when django-allauth did not support stackexchange is socialaccounts
-The newer django-allauth version requires database migration, which seems
-to be an overkill to support an extra network, hence the required information
-has been added in app_settings.
+when django-allauth did not have support for stackexchange.
+The newer django-allauth version requires a database migration
+to support networks like stackexchange which seems to be an overkill
+to support an extra network. This application has support for 
+without the database migration and stores the required information
+in app_settings.
 
 Rationale
 =========
