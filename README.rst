@@ -6,6 +6,12 @@ Integrated set of Django applications addressing authentication,
 registration, account management as well as 3rd party (social) account
 authentication.
 
+This repository was forked from https://github.com/pennersr/django-allauth
+when django-allauth did not support stackexchange is socialaccounts
+The newer django-allauth version requires database migration, which seems
+to be an overkill to support an extra network, hence the required information
+has been added in app_settings.
+
 Rationale
 =========
 
@@ -92,6 +98,8 @@ Supported Providers
 - SoundCloud (OAuth2)
 
 - Twitter
+
+- StackExchange
 
 Note: OAuth/OAuth2 support is built using a common code base, making it easy to add support for additional OAuth/OAuth2 providers. More will follow soon...
 
